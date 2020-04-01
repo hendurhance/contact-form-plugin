@@ -11,21 +11,27 @@
     <div id="form" class="container">
          <h2>Contact</h2>
          <div class="break"></div>
-        <form action="register.php" method="post">
+        <form action="inc/sendemail.php" method="post">
             <div class="input-form">
               <input name="fullname" type="text" name="" placeholder="Full Name">
-            </div>
-            <div class="input-form">
-              <input name="username" type="text" name="" placeholder="Username">
             </div>
             <div class="input-form">
               <input name="email" type="text" name="" placeholder="Email">
             </div>
             <div class="input-form">
-              <input name="password" type="password" name="" placeholder="Password">
+              <input name="phone" type="text" name="" placeholder="Phone Number">
             </div>
             <div class="input-form">
-              <input name="confirmpassword" type="password" name="" placeholder="Confirm Password">
+              <input name="subject" type="text" name="" placeholder="Subject">
+            </div>
+            <div class="input-form">
+              <input name="address" type="text" name="" placeholder="Address">
+            </div>
+            <div class="input-form">
+              <input name="website" type="text" name="" placeholder="Website">
+            </div>
+            <div class="input-form">
+              <input name="message" type="text" name="" placeholder="Message">
             </div>
             <div class="input-form">
               <button type="submit" name="submitreg">Submit</button>

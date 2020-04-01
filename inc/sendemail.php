@@ -1,15 +1,14 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "9ja Cash" );
-define( "RECIPIENT_EMAIL", "9jacashservice@gmail.com" );
+define( "RECIPIENT_NAME", "Hendurhance" );
+define( "RECIPIENT_EMAIL", "afriviral@gmail.com" );
 
 // Read the form values
 $success = false;
-$name = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['name'] ) : "";
+$name = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['fullname'] ) : "";
 $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
 $phone = isset( $_POST['phone'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['phone'] ) : "";
-$services = isset( $_POST['services'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['services'] ) : "";
 $subject = isset( $_POST['subject'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['subject'] ) : "";
 $address = isset( $_POST['address'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['address'] ) : "";
 $website = isset( $_POST['website'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website'] ) : "";
@@ -22,7 +21,6 @@ $body .= 'Email: '. $senderEmail . "\r\n";
 
 
 if ($phone) {$body .= 'Phone: '. $phone . "\r\n"; }
-if ($services) {$body .= 'services: '. $services . "\r\n"; }
 if ($subject) {$body .= 'Subject: '. $subject . "\r\n"; }
 if ($address) {$body .= 'Address: '. $address . "\r\n"; }
 if ($website) {$body .= 'Website: '. $website . "\r\n"; }
