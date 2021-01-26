@@ -4,7 +4,7 @@
 define( "RECIPIENT_NAME", "Hendurhance" );
 define( "RECIPIENT_EMAIL", "afriviral@gmail.com" );
 
-// Read the form values
+// Read the form values and validate
 $success = false;
 $name = isset( $_POST['name'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['fullname'] ) : "";
 $senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['email'] ) : "";
